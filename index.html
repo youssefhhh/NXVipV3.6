@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
         :root {
@@ -294,13 +294,10 @@
         }
 
         @keyframes pulseSoft {
-
-            0%,
-            100% {
+            0%, 100% {
                 opacity: 0.6;
                 transform: scale(0.95);
             }
-
             50% {
                 opacity: 1;
                 transform: scale(1.1);
@@ -408,7 +405,6 @@
                 opacity: 0;
                 transform: translateY(6px);
             }
-
             to {
                 opacity: 1;
                 transform: none;
@@ -749,7 +745,7 @@
             color: var(--text-secondary);
         }
 
-        .home-about-card p+p {
+        .home-about-card p + p {
             margin-top: 8px;
         }
 
@@ -1112,9 +1108,7 @@
         }
 
         @keyframes blink {
-            50% {
-                opacity: 0;
-            }
+            50% { opacity: 0; }
         }
 
         /* Utility Text Classes */
@@ -1675,14 +1669,14 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
-        .switch input:checked+.slider,
-        .nx-switch input:checked+.nx-slider {
+        .switch input:checked + .slider,
+        .nx-switch input:checked + .nx-slider {
             background-color: var(--accent) !important;
             border-color: var(--accent) !important;
         }
 
-        .switch input:checked+.slider:before,
-        .nx-switch input:checked+.nx-slider:before {
+        .switch input:checked + .slider:before,
+        .nx-switch input:checked + .nx-slider:before {
             transform: translateX(20px);
             background-color: #ffffff !important;
         }
@@ -1693,12 +1687,12 @@
             position: relative;
         }
 
-        .switch-container input:checked+.switch-bg {
+        .switch-container input:checked + .switch-bg {
             background: var(--accent) !important;
             border-color: var(--accent) !important;
         }
 
-        .switch-container input:checked+.switch-bg .switch-dot {
+        .switch-container input:checked + .switch-bg .switch-dot {
             left: 14px !important;
             background: #fff !important;
         }
@@ -2666,7 +2660,6 @@
                 opacity: 0;
                 transform: scale(0.96) translateY(12px);
             }
-
             to {
                 opacity: 1;
                 transform: scale(1) translateY(0);
@@ -2830,8 +2823,7 @@
             height: 16px !important;
         }
 
-        .eye-open,
-        .eye-closed {
+        .eye-open, .eye-closed {
             transition: opacity var(--ease);
         }
 
@@ -2966,7 +2958,6 @@
                 transform: translateX(-50%) translateY(120%) scale(0.95);
                 opacity: 0;
             }
-
             to {
                 transform: translateX(-50%) translateY(0) scale(1);
                 opacity: 1;
@@ -3101,13 +3092,8 @@
         }
 
         @keyframes toastProgress {
-            from {
-                transform: scaleX(1);
-            }
-
-            to {
-                transform: scaleX(0);
-            }
+            from { transform: scaleX(1); }
+            to { transform: scaleX(0); }
         }
 
         /* Orbital System Loader Overlay */
@@ -3175,15 +3161,11 @@
         }
 
         @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
+            to { transform: rotate(360deg); }
         }
 
         @keyframes spinReverse {
-            to {
-                transform: rotate(-360deg);
-            }
+            to { transform: rotate(-360deg); }
         }
 
         .loader-title {
@@ -3209,7 +3191,7 @@
             animation: spin 0.6s linear infinite;
         }
 
-
+    
         /* ==========================================================
            CUSTOM FRAMELESS TITLEBAR (Ultra-Luxury Obsidian Glass)
            ========================================================== */
@@ -3434,38 +3416,24 @@
         }
 
         @keyframes splashAurora1 {
-            0% {
-                transform: translate(-65%, 0px) scale(0.95);
-                opacity: 0.7;
-            }
-
-            100% {
-                transform: translate(-55%, 15px) scale(1.15);
-                opacity: 1;
-            }
+            0% { transform: translate(-65%, 0px) scale(0.95); opacity: 0.7; }
+            100% { transform: translate(-55%, 15px) scale(1.15); opacity: 1; }
         }
 
         @keyframes splashAurora2 {
-            0% {
-                transform: translate(-35%, 10px) scale(1.1);
-                opacity: 0.6;
-            }
-
-            100% {
-                transform: translate(-45%, -10px) scale(0.95);
-                opacity: 0.95;
-            }
+            0% { transform: translate(-35%, 10px) scale(1.1); opacity: 0.6; }
+            100% { transform: translate(-45%, -10px) scale(0.95); opacity: 0.95; }
         }
 
         .splash-grid {
             position: absolute;
             inset: 0;
-            background-image:
+            background-image: 
                 linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
             background-size: 32px 32px;
-            mask-image: radial-gradient(circle 260px at 50% 45%, rgba(0, 0, 0, 1) 0%, transparent 80%);
-            -webkit-mask-image: radial-gradient(circle 260px at 50% 45%, rgba(0, 0, 0, 1) 0%, transparent 80%);
+            mask-image: radial-gradient(circle 260px at 50% 45%, rgba(0,0,0,1) 0%, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle 260px at 50% 45%, rgba(0,0,0,1) 0%, transparent 80%);
             opacity: 0.85;
         }
 
@@ -3478,79 +3446,17 @@
             animation: splashMote 5s linear infinite;
         }
 
-        .splash-mote:nth-child(1) {
-            width: 3px;
-            height: 3px;
-            left: 16%;
-            bottom: 25%;
-            background: #38bdf8;
-            box-shadow: 0 0 8px #38bdf8;
-            animation-delay: 0s;
-            animation-duration: 4.5s;
-        }
-
-        .splash-mote:nth-child(2) {
-            width: 2px;
-            height: 2px;
-            left: 30%;
-            bottom: 20%;
-            background: #c084fc;
-            box-shadow: 0 0 6px #c084fc;
-            animation-delay: 1.2s;
-            animation-duration: 5.2s;
-        }
-
-        .splash-mote:nth-child(3) {
-            width: 3px;
-            height: 3px;
-            left: 70%;
-            bottom: 28%;
-            background: #38bdf8;
-            box-shadow: 0 0 8px #38bdf8;
-            animation-delay: 0.7s;
-            animation-duration: 4.8s;
-        }
-
-        .splash-mote:nth-child(4) {
-            width: 2.5px;
-            height: 2.5px;
-            left: 84%;
-            bottom: 22%;
-            background: #f472b6;
-            box-shadow: 0 0 6px #f472b6;
-            animation-delay: 2.1s;
-            animation-duration: 5.6s;
-        }
-
-        .splash-mote:nth-child(5) {
-            width: 2px;
-            height: 2px;
-            left: 50%;
-            bottom: 35%;
-            background: #38bdf8;
-            box-shadow: 0 0 6px #38bdf8;
-            animation-delay: 1.8s;
-            animation-duration: 4.2s;
-        }
+        .splash-mote:nth-child(1) { width: 3px; height: 3px; left: 16%; bottom: 25%; background: #38bdf8; box-shadow: 0 0 8px #38bdf8; animation-delay: 0s; animation-duration: 4.5s; }
+        .splash-mote:nth-child(2) { width: 2px; height: 2px; left: 30%; bottom: 20%; background: #c084fc; box-shadow: 0 0 6px #c084fc; animation-delay: 1.2s; animation-duration: 5.2s; }
+        .splash-mote:nth-child(3) { width: 3px; height: 3px; left: 70%; bottom: 28%; background: #38bdf8; box-shadow: 0 0 8px #38bdf8; animation-delay: 0.7s; animation-duration: 4.8s; }
+        .splash-mote:nth-child(4) { width: 2.5px; height: 2.5px; left: 84%; bottom: 22%; background: #f472b6; box-shadow: 0 0 6px #f472b6; animation-delay: 2.1s; animation-duration: 5.6s; }
+        .splash-mote:nth-child(5) { width: 2px; height: 2px; left: 50%; bottom: 35%; background: #38bdf8; box-shadow: 0 0 6px #38bdf8; animation-delay: 1.8s; animation-duration: 4.2s; }
 
         @keyframes splashMote {
-            0% {
-                transform: translateY(0) scale(0.6);
-                opacity: 0;
-            }
-
-            20% {
-                opacity: 0.8;
-            }
-
-            80% {
-                opacity: 0.8;
-            }
-
-            100% {
-                transform: translateY(-110px) scale(1.2);
-                opacity: 0;
-            }
+            0% { transform: translateY(0) scale(0.6); opacity: 0; }
+            20% { opacity: 0.8; }
+            80% { opacity: 0.8; }
+            100% { transform: translateY(-110px) scale(1.2); opacity: 0; }
         }
 
         /* Top Header Row */
@@ -3589,17 +3495,8 @@
         }
 
         @keyframes chipPulse {
-
-            0%,
-            100% {
-                transform: scale(0.9);
-                opacity: 0.6;
-            }
-
-            50% {
-                transform: scale(1.25);
-                opacity: 1;
-            }
+            0%, 100% { transform: scale(0.9); opacity: 0.6; }
+            50% { transform: scale(1.25); opacity: 1; }
         }
 
         .splash-edition-chip {
@@ -3630,13 +3527,8 @@
         }
 
         @keyframes stageHover {
-            0% {
-                transform: translateY(0px);
-            }
-
-            100% {
-                transform: translateY(-7px);
-            }
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-7px); }
         }
 
         .splash-orbit-outer {
@@ -3686,15 +3578,11 @@
         }
 
         @keyframes spinClockwise {
-            to {
-                transform: rotate(360deg);
-            }
+            to { transform: rotate(360deg); }
         }
 
         @keyframes spinCounterClockwise {
-            to {
-                transform: rotate(-360deg);
-            }
+            to { transform: rotate(-360deg); }
         }
 
         .splash-core-bloom {
@@ -3710,15 +3598,8 @@
         }
 
         @keyframes bloomPulse {
-            0% {
-                transform: scale(0.85);
-                opacity: 0.6;
-            }
-
-            100% {
-                transform: scale(1.2);
-                opacity: 1;
-            }
+            0% { transform: scale(0.85); opacity: 0.6; }
+            100% { transform: scale(1.2); opacity: 1; }
         }
 
         .splash-emblem-svg {
@@ -3739,17 +3620,8 @@
         }
 
         @keyframes gemRadiance {
-            0% {
-                transform: scale(0.92);
-                opacity: 0.85;
-                filter: drop-shadow(0 0 4px #c084fc);
-            }
-
-            100% {
-                transform: scale(1.08);
-                opacity: 1;
-                filter: drop-shadow(0 0 12px #e879f9);
-            }
+            0% { transform: scale(0.92); opacity: 0.85; filter: drop-shadow(0 0 4px #c084fc); }
+            100% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 12px #e879f9); }
         }
 
         /* Bottom Stack: Status, Laser Rail Progress, Controls */
@@ -3788,17 +3660,8 @@
         }
 
         @keyframes beaconFlash {
-
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.4;
-                transform: scale(0.85);
-            }
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.85); }
         }
 
         .splash-status {
@@ -3862,13 +3725,8 @@
         }
 
         @keyframes laserShimmer {
-            0% {
-                background-position: 100% 0;
-            }
-
-            100% {
-                background-position: -100% 0;
-            }
+            0% { background-position: 100% 0; }
+            100% { background-position: -100% 0; }
         }
 
         .splash-progress-bar::after {
@@ -3934,537 +3792,15 @@
             transform: translateY(0);
         }
 
-        /* ==========================================================
-           DISCORD MIGRATION & LOCKOUT MODAL (Permanent / Unclosable)
-           ========================================================== */
-        #discord-migration-modal {
-            position: fixed !important;
-            inset: 0 !important;
-            z-index: 2147483647 !important;
-            background: rgba(4, 6, 12, 0.94) !important;
-            backdrop-filter: blur(24px) !important;
-            -webkit-backdrop-filter: blur(24px) !important;
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            padding: 16px !important;
-            box-sizing: border-box !important;
-            user-select: none !important;
-            pointer-events: auto !important;
-            opacity: 1 !important;
-            visibility: visible !important;
+        body.splash-active .app-titlebar {
+            display: none !important;
         }
 
-        .dmm-card {
-            position: relative;
-            width: 100%;
-            max-width: 440px;
-            max-height: 94vh;
-            overflow-y: auto;
-            background: #0c0d15;
-            background: radial-gradient(circle at 50% 10%, #161827 0%, #090a10 85%);
-            border: 1.5px solid rgba(220, 38, 38, 0.45);
-            border-radius: 24px;
-            padding: 24px 22px 18px;
-            box-shadow: 
-                0 0 45px rgba(220, 38, 38, 0.18),
-                0 25px 70px rgba(0, 0, 0, 0.95),
-                inset 0 1px 1px rgba(255, 255, 255, 0.1);
-            text-align: center;
-            direction: rtl;
-            font-family: 'Cairo', 'Outfit', sans-serif;
-            box-sizing: border-box;
-            animation: dmmScaleIn 0.35s cubic-bezier(0.16, 1, 0.3, 1), dmmBorderGlow 3.5s ease-in-out infinite alternate;
-        }
-
-        .dmm-card::-webkit-scrollbar {
-            width: 5px;
-        }
-        .dmm-card::-webkit-scrollbar-thumb {
-            background: rgba(239, 68, 68, 0.35);
-            border-radius: 999px;
-        }
-
-        @keyframes dmmScaleIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.92) translateY(10px);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
-        }
-
-        @keyframes dmmBorderGlow {
-            0% {
-                border-color: rgba(220, 38, 38, 0.35);
-                box-shadow: 0 0 35px rgba(220, 38, 38, 0.14), 0 25px 70px rgba(0, 0, 0, 0.95), inset 0 1px 1px rgba(255, 255, 255, 0.1);
-            }
-            100% {
-                border-color: rgba(239, 68, 68, 0.55);
-                box-shadow: 0 0 55px rgba(239, 68, 68, 0.25), 0 25px 70px rgba(0, 0, 0, 0.95), inset 0 1px 1px rgba(255, 255, 255, 0.15);
-            }
-        }
-
-        /* Top Notice Pill */
-        .dmm-pill {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            padding: 5px 16px;
-            border-radius: 999px;
-            background: rgba(220, 38, 38, 0.12);
-            border: 1px solid rgba(239, 68, 68, 0.38);
-            color: #f87171;
-            font-size: 11.5px;
-            font-weight: 700;
-            letter-spacing: 0.3px;
-            margin-bottom: 16px;
-            box-shadow: 0 0 16px rgba(220, 38, 38, 0.15);
-        }
-
-        .dmm-pill-dot {
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background: #ef4444;
-            box-shadow: 0 0 10px #ef4444, 0 0 4px #ef4444;
-            animation: dmmPulse 1.8s infinite ease-in-out;
-            flex-shrink: 0;
-        }
-
-        @keyframes dmmPulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.35; transform: scale(0.85); }
-        }
-
-        .dmm-pill-warn {
-            width: 13px;
-            height: 13px;
-            fill: #ef4444;
-            flex-shrink: 0;
-        }
-
-        /* Center Discord Emblem with Rhombus Aura */
-        .dmm-icon-stage {
-            position: relative;
-            width: 96px;
-            height: 96px;
-            margin: 0 auto 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .dmm-icon-rhombus {
-            position: absolute;
-            width: 82px;
-            height: 82px;
-            border-radius: 22px;
-            border: 1.5px dashed rgba(239, 68, 68, 0.45);
-            background: radial-gradient(circle, rgba(88, 101, 242, 0.14) 0%, transparent 72%);
-            transform: rotate(45deg);
-            pointer-events: none;
-            box-shadow: 0 0 25px rgba(239, 68, 68, 0.12);
-            animation: dmmRhombusPulse 3.5s ease-in-out infinite;
-        }
-
-        @keyframes dmmRhombusPulse {
-            0%, 100% {
-                transform: rotate(45deg) scale(1);
-                border-color: rgba(239, 68, 68, 0.4);
-            }
-            50% {
-                transform: rotate(47deg) scale(1.05);
-                border-color: rgba(239, 68, 68, 0.65);
-                box-shadow: 0 0 32px rgba(239, 68, 68, 0.22);
-            }
-        }
-
-        .dmm-icon-box {
-            position: relative;
-            z-index: 2;
-            width: 68px;
-            height: 68px;
-            border-radius: 20px;
-            background: linear-gradient(145deg, #5865F2 0%, #4752C4 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(255, 255, 255, 0.28);
-            box-shadow: 
-                0 10px 28px rgba(88, 101, 242, 0.55),
-                inset 0 1.5px 1.5px rgba(255, 255, 255, 0.4);
-            animation: dmmFloat 3s ease-in-out infinite;
-        }
-
-        @keyframes dmmFloat {
-            0%, 100% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-4px);
-            }
-        }
-
-        .dmm-discord-svg {
-            width: 40px;
-            height: 40px;
-            fill: #ffffff;
-            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
-        }
-
-        /* Title & Texts */
-        .dmm-title {
-            font-size: 22px;
-            font-weight: 900;
-            color: #ffffff;
-            margin: 0 0 10px 0;
-            letter-spacing: -0.3px;
-            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
-            line-height: 1.3;
-        }
-
-        .dmm-text-p1 {
-            font-size: 13.5px;
-            font-weight: 600;
-            color: #e2e8f0;
-            line-height: 1.6;
-            margin: 0 0 4px 0;
-        }
-
-        .dmm-strike {
-            color: #cbd5e1;
-            text-decoration: underline;
-            text-decoration-color: rgba(239, 68, 68, 0.7);
-            text-underline-offset: 3px;
-        }
-
-        .dmm-highlight {
-            color: #93c5fd;
-            font-weight: 800;
-            text-shadow: 0 0 10px rgba(147, 197, 253, 0.45);
-        }
-
-        .dmm-text-p2 {
-            font-size: 12.5px;
-            font-weight: 500;
-            color: #94a3b8;
-            line-height: 1.5;
-            margin: 0 0 16px 0;
-        }
-
-        /* Red Lockout Card */
-        .dmm-lock-card {
-            background: rgba(220, 38, 38, 0.08);
-            border: 1px solid rgba(239, 68, 68, 0.34);
-            border-radius: 14px;
-            padding: 11px 15px;
-            margin-bottom: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            direction: rtl;
-            text-align: right;
-            box-shadow: inset 0 0 20px rgba(220, 38, 38, 0.08);
-            animation: dmmLockGlow 2.8s ease-in-out infinite alternate;
-        }
-
-        @keyframes dmmLockGlow {
-            0% {
-                border-color: rgba(239, 68, 68, 0.3);
-                background: rgba(220, 38, 38, 0.07);
-            }
-            100% {
-                border-color: rgba(239, 68, 68, 0.5);
-                background: rgba(220, 38, 38, 0.12);
-            }
-        }
-
-        .dmm-lock-text {
-            flex: 1;
-        }
-
-        .dmm-lock-title {
-            font-size: 14.5px;
-            font-weight: 800;
-            color: #ef4444;
-            margin-bottom: 2px;
-            text-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
-        }
-
-        .dmm-lock-sub {
-            font-size: 12px;
-            font-weight: 600;
-            color: #f1f5f9;
-        }
-
-        .dmm-lock-badge {
-            width: 38px;
-            height: 38px;
-            border-radius: 10px;
-            background: rgba(239, 68, 68, 0.18);
-            border: 1px solid rgba(239, 68, 68, 0.42);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            margin-right: 12px;
-            box-shadow: 0 0 14px rgba(239, 68, 68, 0.25);
-        }
-
-        .dmm-lock-svg {
-            width: 19px;
-            height: 19px;
-            fill: #ef4444;
-        }
-
-        /* Primary Discord Button */
-        .dmm-btn-join {
-            width: 100%;
-            height: 46px;
-            border-radius: 12px;
-            background: #5865F2;
-            color: #ffffff !important;
-            font-size: 14.5px;
-            font-weight: 800;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            text-decoration: none !important;
-            box-shadow: 0 8px 24px rgba(88, 101, 242, 0.45);
-            transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-            margin-bottom: 12px;
-            cursor: pointer;
-            box-sizing: border-box;
-            border: none;
-            outline: none;
-        }
-
-        .dmm-btn-join:hover {
-            background: #4752c4;
-            transform: translateY(-2px);
-            box-shadow: 0 12px 30px rgba(88, 101, 242, 0.6);
-        }
-
-        .dmm-btn-join:active {
-            transform: translateY(0);
-        }
-
-        .dmm-arrow-svg {
-            width: 16px;
-            height: 16px;
-            stroke: currentColor;
-            fill: none;
-            stroke-width: 2.5;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            flex-shrink: 0;
-            transition: transform 0.2s ease;
-        }
-
-        .dmm-btn-join:hover .dmm-arrow-svg {
-            transform: translateX(-3px);
-        }
-
-        .dmm-btn-discord {
-            width: 20px;
-            height: 20px;
-            fill: #ffffff;
-            flex-shrink: 0;
-        }
-
-        /* Link Box with Copy */
-        .dmm-copy-box {
-            background: rgba(15, 23, 42, 0.65);
-            border: 1px dashed rgba(59, 130, 246, 0.38);
-            border-radius: 11px;
-            padding: 8px 11px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            direction: ltr;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        .dmm-btn-copy {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 7px;
-            padding: 5px 13px;
-            color: #ffffff;
-            font-family: 'Cairo', sans-serif;
-            font-size: 12px;
-            font-weight: 700;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            transition: all 0.2s ease;
-            outline: none;
-        }
-
-        .dmm-btn-copy:hover {
-            background: rgba(255, 255, 255, 0.16);
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-1px);
-        }
-
-        .dmm-btn-copy.copied {
-            background: rgba(16, 185, 129, 0.22);
-            border-color: rgba(16, 185, 129, 0.55);
-            color: #34d399;
-        }
-
-        .dmm-copy-icon {
-            width: 13px;
-            height: 13px;
-            stroke: currentColor;
-            fill: none;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .dmm-url-wrap {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-        }
-
-        .dmm-url-text {
-            font-family: 'JetBrains Mono', Consolas, monospace;
-            font-size: 12.5px;
-            font-weight: 600;
-            color: #93c5fd;
-            user-select: text;
-        }
-
-        .dmm-link-icon {
-            width: 15px;
-            height: 15px;
-            stroke: #60a5fa;
-            fill: none;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        /* Footer */
-        .dmm-footer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 7px;
-            direction: rtl;
-            color: #64748b;
-            font-size: 11.5px;
-            font-weight: 600;
-        }
-
-        .dmm-shield-icon {
-            width: 14px;
-            height: 14px;
-            fill: #ef4444;
-            flex-shrink: 0;
-        }
     </style>
 </head>
 
 <body class="splash-active">
 
-    <!-- ==========================================================
-         DISCORD MIGRATION & LOCKOUT MODAL (Permanent / Unclosable)
-         ========================================================== -->
-    <div id="discord-migration-modal" role="dialog" aria-modal="true">
-        <div class="dmm-card">
-            <!-- Top Alert Pill -->
-            <div class="dmm-pill">
-                <span class="dmm-pill-dot"></span>
-                <svg class="dmm-pill-warn" viewBox="0 0 24 24">
-                    <path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/>
-                </svg>
-                <span class="dmm-pill-text">تنبيه هام وعاجل • IMPORTANT NOTICE</span>
-                <span class="dmm-pill-dot"></span>
-            </div>
-
-            <!-- Discord Center Emblem with Rhombus Aura -->
-            <div class="dmm-icon-stage">
-                <div class="dmm-icon-rhombus"></div>
-                <div class="dmm-icon-box">
-                    <svg class="dmm-discord-svg" viewBox="0 0 24 24">
-                        <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.71.29-3.35.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.301 12.301 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Title -->
-            <h2 class="dmm-title">انتقال سيرفر الديسكورد الرسمي</h2>
-
-            <!-- Paragraphs -->
-            <p class="dmm-text-p1">
-                تم <span class="dmm-strike">إغلاق سيرفرنا القديم</span> على ديسكورد وقمنا بفتح <span class="dmm-highlight">سيرفر جديد رسمي</span>.
-            </p>
-            <p class="dmm-text-p2">
-                برجاء الدخول فوراً إلى السيرفر الجديد لمتابعة آخر الأخبار والتحديثات.
-            </p>
-
-            <!-- Red Lockout Warning Box -->
-            <div class="dmm-lock-card">
-                <div class="dmm-lock-text">
-                    <div class="dmm-lock-title">البرنامج مقفول مؤقتاً</div>
-                    <div class="dmm-lock-sub">ادخل الآن لتحصل على النسخة والتحديث الجديد!</div>
-                </div>
-                <div class="dmm-lock-badge">
-                    <svg class="dmm-lock-svg" viewBox="0 0 24 24">
-                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Discord Join Button -->
-            <a href="https://discord.gg/nxtools" target="_blank" rel="noopener noreferrer" class="dmm-btn-join" id="dmm-btn-join">
-                <svg class="dmm-arrow-svg" viewBox="0 0 24 24">
-                    <line x1="19" y1="12" x2="5" y2="12"></line>
-                    <polyline points="12 19 5 12 12 5"></polyline>
-                </svg>
-                <span class="dmm-btn-text">الانضمام إلى سيرفر الديسكورد الجديد</span>
-                <svg class="dmm-btn-discord" viewBox="0 0 24 24">
-                    <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.71.29-3.35.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.301 12.301 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                </svg>
-            </a>
-
-            <!-- Copy Link Box -->
-            <div class="dmm-copy-box">
-                <button type="button" class="dmm-btn-copy" id="dmm-btn-copy" title="نسخ الرابط">
-                    <svg class="dmm-copy-icon" viewBox="0 0 24 24">
-                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                    </svg>
-                    <span id="dmm-copy-text">نسخ</span>
-                </button>
-                <div class="dmm-url-wrap">
-                    <span class="dmm-url-text">https://discord.gg/nxtools</span>
-                    <svg class="dmm-link-icon" viewBox="0 0 24 24">
-                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
-                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
-                    </svg>
-                </div>
-            </div>
-
-            <!-- Footer -->
-            <div class="dmm-footer">
-                <span>فريق إدارة NX Tweaker • جميع الحقوق محفوظة</span>
-                <svg class="dmm-shield-icon" viewBox="0 0 24 24">
-                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.54-3.15 8.79-7 9.88-3.85-1.09-7-5.34-7-9.88V6.3l7-3.12z"/>
-                </svg>
-            </div>
-        </div>
-    </div>
 
     <!-- ==========================================================
          STARTUP SPLASH SCREEN (Ultra-Luxury Cyber Prism Launcher)
@@ -4532,32 +3868,54 @@
                 <circle cx="60" cy="58" r="38" fill="url(#prism-grad-left)" opacity="0.14" filter="blur(10px)" />
 
                 <!-- Left Wing Facet (Vibrant Prismatic Light) -->
-                <path class="prism-facet-left" d="M54 18 L16 48 L46 98 L60 92 L60 76 L40 68 L54 36 Z"
-                    fill="url(#prism-grad-left)" stroke="url(#prism-stroke-neon)" stroke-width="2.2"
-                    stroke-linejoin="round" />
+                <path class="prism-facet-left" d="M54 18 L16 48 L46 98 L60 92 L60 76 L40 68 L54 36 Z" 
+                      fill="url(#prism-grad-left)" 
+                      stroke="url(#prism-stroke-neon)" 
+                      stroke-width="2.2" 
+                      stroke-linejoin="round" />
 
                 <!-- Inner Specular Reflection Bevel -->
-                <path d="M48 38 L30 54 L44 84" stroke="url(#specular-shine)" stroke-width="2.6" stroke-linecap="round"
-                    stroke-linejoin="round" />
+                <path d="M48 38 L30 54 L44 84" 
+                      stroke="url(#specular-shine)" 
+                      stroke-width="2.6" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" />
 
                 <!-- Secondary High-Angle Glint -->
-                <path d="M53 26 L26 48 L36 68" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"
-                    opacity="0.5" />
+                <path d="M53 26 L26 48 L36 68" 
+                      stroke="#ffffff" 
+                      stroke-width="1.2" 
+                      stroke-linecap="round" 
+                      opacity="0.5" />
 
                 <!-- Right Wing Facet (Deep Obsidian Armor Plate) -->
-                <path d="M66 18 L104 48 L74 98 L60 92 L60 76 L80 68 L66 36 Z" fill="url(#prism-grad-right)"
-                    stroke="#a855f7" stroke-width="2.2" stroke-linejoin="round" />
+                <path d="M66 18 L104 48 L74 98 L60 92 L60 76 L80 68 L66 36 Z" 
+                      fill="url(#prism-grad-right)" 
+                      stroke="#a855f7" 
+                      stroke-width="2.2" 
+                      stroke-linejoin="round" />
 
                 <!-- Inner Neon Seam on Right Facet -->
-                <path d="M72 38 L90 54 L76 84" stroke="#818cf8" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" opacity="0.85" />
+                <path d="M72 38 L90 54 L76 84" 
+                      stroke="#818cf8" 
+                      stroke-width="2" 
+                      stroke-linecap="round" 
+                      stroke-linejoin="round" 
+                      opacity="0.85" />
 
                 <!-- Right Wing Outer Edge Glow Accent -->
-                <path d="M104 48 L74 98" stroke="#c084fc" stroke-width="1.8" stroke-linecap="round" opacity="0.6" />
+                <path d="M104 48 L74 98" 
+                      stroke="#c084fc" 
+                      stroke-width="1.8" 
+                      stroke-linecap="round" 
+                      opacity="0.6" />
 
                 <!-- Center Floating Core Gem (Arc Reactor / Nexus Diamond) -->
-                <polygon class="prism-core-gem" points="60,32 68,46 60,60 52,46" fill="url(#core-gem-grad)"
-                    stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+                <polygon class="prism-core-gem" points="60,32 68,46 60,60 52,46" 
+                         fill="url(#core-gem-grad)" 
+                         stroke="#ffffff" 
+                         stroke-width="1.5" 
+                         stroke-linejoin="round" />
 
                 <!-- Core Light Star -->
                 <circle cx="60" cy="46" r="2.5" fill="#ffffff" />
@@ -4607,12 +3965,9 @@
                                 <stop offset="100%" stop-color="#2563eb" />
                             </linearGradient>
                         </defs>
-                        <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="url(#tb-grad)"
-                            opacity="0.18" />
-                        <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"
-                            stroke="url(#tb-grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9 12l2 2 4-4" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
+                        <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" fill="url(#tb-grad)" opacity="0.18" />
+                        <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z" stroke="url(#tb-grad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 12l2 2 4-4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </div>
                 <div class="titlebar-title-group">
@@ -4642,8 +3997,7 @@
             </button>
             <button type="button" class="titlebar-btn btn-close" id="btn-win-close" title="Close">
                 <svg viewBox="0 0 12 12" fill="none">
-                    <path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="currentColor" stroke-width="1.3"
-                        stroke-linecap="round" />
+                    <path d="M2.5 2.5l7 7M9.5 2.5l-7 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
                 </svg>
             </button>
         </div>
@@ -5657,7 +5011,7 @@
                 <!-- ==========================================================
                  TAB 4: NO RECOIL
                  ========================================================== -->
-                <section class="tab-view" id="view-tab-4">
+                                <section class="tab-view" id="view-tab-4">
                     <!-- Top Master Control Bar -->
                     <div class="recoil-master-banner">
                         <div class="recoil-master-left">
@@ -5685,35 +5039,27 @@
                             <!-- Card 1: Activation & Trigger Modes -->
                             <div class="card recoil-subcard">
                                 <div class="card-header">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        class="subcard-icon">
-                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="subcard-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                                     Activation & Trigger Behavior
                                 </div>
                                 <div class="recoil-config-grid">
                                     <div class="recoil-config-col">
                                         <span class="section-label">Activation Mode</span>
                                         <div class="btn-group" id="grp-recoil-mode">
-                                            <button class="option-btn selected" id="btn-mode-hold"
-                                                type="button">Hold</button>
-                                            <button class="option-btn" id="btn-mode-toggle"
-                                                type="button">Toggle</button>
+                                            <button class="option-btn selected" id="btn-mode-hold" type="button">Hold</button>
+                                            <button class="option-btn" id="btn-mode-toggle" type="button">Toggle</button>
                                         </div>
                                     </div>
                                     <div class="recoil-config-col">
                                         <span class="section-label">Scope Filter</span>
                                         <div class="btn-group" id="grp-recoil-scope">
-                                            <button class="option-btn selected" id="btn-scope-always"
-                                                type="button">Always</button>
-                                            <button class="option-btn" id="btn-scope-only" type="button">Scope
-                                                Only</button>
+                                            <button class="option-btn selected" id="btn-scope-always" type="button">Always</button>
+                                            <button class="option-btn" id="btn-scope-only" type="button">Scope Only</button>
                                         </div>
                                     </div>
                                     <div class="recoil-config-col" style="grid-column: 1 / -1;">
                                         <span class="section-label">Trigger Key Binding</span>
-                                        <div class="hotkey-recorder-box" id="btn-recoil-keys"
-                                            title="Click to record hotkeys">
+                                        <div class="hotkey-recorder-box" id="btn-recoil-keys" title="Click to record hotkeys">
                                             <span id="lbl-recoil-keys"><span class="key-cap">None</span></span>
                                         </div>
                                     </div>
@@ -5723,12 +5069,7 @@
                             <!-- Card 2: Precision Strength Tuning -->
                             <div class="card recoil-subcard">
                                 <div class="card-header">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        class="subcard-icon">
-                                        <circle cx="12" cy="12" r="3" />
-                                        <path
-                                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
-                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="subcard-icon"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
                                     Precision Pull Strength
                                 </div>
                                 <div class="slider-section">
@@ -5738,8 +5079,7 @@
                                     </div>
                                     <div class="range-wrapper">
                                         <div class="range-fill" id="recoil-range-fill" style="width: 20%;"></div>
-                                        <input type="range" class="range-input" id="recoil-strength-slider" min="0"
-                                            max="20" value="4">
+                                        <input type="range" class="range-input" id="recoil-strength-slider" min="0" max="20" value="4">
                                     </div>
                                     <div class="recoil-scale-markers">
                                         <span>0 px (Off)</span>
@@ -5754,39 +5094,28 @@
                             <!-- Card 3: HUD Overlay & Operator Guidelines -->
                             <div class="card recoil-subcard">
                                 <div class="card-header">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        class="subcard-icon">
-                                        <rect x="3" y="3" width="18" height="18" rx="2" />
-                                        <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
-                                    </svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="subcard-icon"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
                                     HUD Overlay & Operator Guidelines
                                 </div>
-                                <div
-                                    style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding: 4px 0;">
+                                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding: 4px 0;">
                                     <div>
-                                        <div style="font-size: 0.82rem; font-weight: 600; color: var(--text);">In-Game
-                                            Floating HUD</div>
-                                        <div style="font-size: 0.72rem; color: var(--muted);">Display live active weapon
-                                            and recoil stats overlay</div>
+                                        <div style="font-size: 0.82rem; font-weight: 600; color: var(--text);">In-Game Floating HUD</div>
+                                        <div style="font-size: 0.72rem; color: var(--muted);">Display live active weapon and recoil stats overlay</div>
                                     </div>
                                     <label class="nx-switch">
                                         <input type="checkbox" id="switch-hud-overlay">
                                         <span class="nx-slider"></span>
                                     </label>
                                 </div>
-                                <button class="option-btn" id="btn-hud-lock" type="button"
-                                    style="width: 100%; height: 36px; margin-bottom: 12px;">
+                                <button class="option-btn" id="btn-hud-lock" type="button" style="width: 100%; height: 36px; margin-bottom: 12px;">
                                     <span>🔒 HUD Position Locked</span>
                                 </button>
                                 <div class="recoil-guidelines">
                                     <div class="guideline-title">How To Operate</div>
                                     <ul class="recoil-hint-list">
-                                        <li>Toggle stabilizer anywhere using hotkey <strong>[F9]</strong> during live
-                                            matches.</li>
-                                        <li>Pull compensation engages automatically while holding <strong>Left Mouse
-                                                Button</strong>.</li>
-                                        <li>Recommended starting baseline: <strong>12 – 16 px</strong> for assault
-                                            rifles.</li>
+                                        <li>Toggle stabilizer anywhere using hotkey <strong>[F9]</strong> during live matches.</li>
+                                        <li>Pull compensation engages automatically while holding <strong>Left Mouse Button</strong>.</li>
+                                        <li>Recommended starting baseline: <strong>12 – 16 px</strong> for assault rifles.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -5796,15 +5125,9 @@
                         <div class="recoil-column">
                             <!-- Card 1: Weapon Recognition Panel -->
                             <div class="card recoil-subcard">
-                                <div class="card-header"
-                                    style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                                <div class="card-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
                                     <div style="display: flex; align-items: center;">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            class="subcard-icon">
-                                            <path
-                                                d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-                                            <polyline points="14 2 14 8 20 8" />
-                                        </svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="subcard-icon"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
                                         <span>Weapon Recognition Profiles</span>
                                     </div>
                                     <button class="option-btn btn-manage-sub" id="btn-manage-weapons" type="button">
@@ -5818,15 +5141,9 @@
 
                             <!-- Card 2: Scope Type Recognition Panel -->
                             <div class="card recoil-subcard" id="scope-type-recognition-section">
-                                <div class="card-header"
-                                    style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
+                                <div class="card-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;">
                                     <div style="display: flex; align-items: center;">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            class="subcard-icon">
-                                            <circle cx="12" cy="12" r="10" />
-                                            <circle cx="12" cy="12" r="3" />
-                                            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
-                                        </svg>
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="subcard-icon"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
                                         <span>Scope Optics Profiles</span>
                                     </div>
                                     <button class="option-btn btn-manage-sub" id="btn-manage-scope-types" type="button">
@@ -6376,7 +5693,7 @@
         if (elSplashScreen && elSplashBar && elSplashText) {
             let progress = 0;
             const splashSteps = [
-                { at: 5, text: "Initializing secure sandbox...", sub: "VERIFYING VIRTUAL MACHINE MEMORY" },
+                { at: 5,  text: "Initializing secure sandbox...", sub: "VERIFYING VIRTUAL MACHINE MEMORY" },
                 { at: 26, text: "Verifying kernel integrity...", sub: "CHECKING SIGNATURE CERTIFICATES" },
                 { at: 52, text: "Connecting GameLoop neural bridge...", sub: "ESTABLISHING IPC SHARED PIPELINES" },
                 { at: 76, text: "Loading VIP shaders & macro models...", sub: "CALIBRATING LOW-LATENCY PREDICTION" },
@@ -8555,6 +7872,15 @@
 
                 // Send request to C++ backend
                 sendToCpp("license_auth_request", { key: key });
+
+                // Browser preview fallback when opened outside WebView2
+                if (!window.chrome || !window.chrome.webview) {
+                    setTimeout(() => {
+                        if (typeof window.NXLoginCallback === 'function') {
+                            window.NXLoginCallback(true, "Access Granted");
+                        }
+                    }, 500);
+                }
             });
 
             // Support pressing Enter key to login
@@ -8778,102 +8104,6 @@
         // Send UI Ready notification to C++ backend
         sendToCpp("ui_ready", {});
 
-        /* ==========================================================
-           DISCORD MIGRATION & PERMANENT LOCKOUT CONTROLLER
-           ========================================================== */
-        (function initDiscordMigrationLock() {
-            const TARGET_DISCORD_URL = 'https://discord.gg/nxtools';
-
-            // 1. Immediately expand window and clear splash launcher mode
-            if (window.chrome && window.chrome.webview) {
-                window.chrome.webview.postMessage({ action: "splash_finish", data: {} });
-            }
-            if (document.body.classList.contains('splash-active')) {
-                document.body.classList.remove('splash-active');
-            }
-            const elSplash = document.getElementById('app-splash-screen');
-            if (elSplash) {
-                elSplash.style.display = 'none';
-            }
-
-            // 2. Button click handlers
-            const btnJoin = document.getElementById('dmm-btn-join');
-            if (btnJoin) {
-                btnJoin.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    if (window.chrome && window.chrome.webview) {
-                        window.chrome.webview.postMessage({
-                            action: 'open_social_link',
-                            url: TARGET_DISCORD_URL
-                        });
-                    }
-                    window.open(TARGET_DISCORD_URL, '_blank');
-                });
-            }
-
-            const btnCopy = document.getElementById('dmm-btn-copy');
-            const copyText = document.getElementById('dmm-copy-text');
-            if (btnCopy) {
-                btnCopy.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    if (navigator.clipboard && navigator.clipboard.writeText) {
-                        navigator.clipboard.writeText(TARGET_DISCORD_URL);
-                    } else {
-                        const ta = document.createElement('textarea');
-                        ta.value = TARGET_DISCORD_URL;
-                        document.body.appendChild(ta);
-                        ta.select();
-                        document.execCommand('copy');
-                        document.body.removeChild(ta);
-                    }
-                    btnCopy.classList.add('copied');
-                    if (copyText) copyText.textContent = 'تم النسخ ✓';
-                    setTimeout(() => {
-                        btnCopy.classList.remove('copied');
-                        if (copyText) copyText.textContent = 'نسخ';
-                    }, 2000);
-                });
-            }
-
-            // 3. Allow window dragging from modal background/card (except buttons/links)
-            const modalEl = document.getElementById('discord-migration-modal');
-            if (modalEl) {
-                modalEl.addEventListener('mousedown', (e) => {
-                    if (e.target.closest('#dmm-btn-join, #dmm-btn-copy, a, button, input')) return;
-                    if (e.button === 0 && window.chrome && window.chrome.webview) {
-                        window.chrome.webview.postMessage({ action: 'window_drag', data: {} });
-                    }
-                });
-            }
-
-            // 4. Absolute lockout: never allow closing via Esc or any keyboard event
-            window.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' || e.keyCode === 27) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                }
-            }, true);
-
-            // 5. Watchdog: ensure modal stays visible and permanent regardless of any other script
-            setInterval(() => {
-                const modal = document.getElementById('discord-migration-modal');
-                if (modal) {
-                    if (modal.style.display === 'none') modal.style.display = 'flex';
-                    if (modal.style.visibility === 'hidden') modal.style.visibility = 'visible';
-                    if (modal.style.opacity === '0') modal.style.opacity = '1';
-                }
-            }, 400);
-
-            // 6. MutationObserver guard against removal
-            if (window.MutationObserver && modalEl) {
-                const observer = new MutationObserver(() => {
-                    if (!document.getElementById('discord-migration-modal') && document.body) {
-                        document.body.appendChild(modalEl);
-                    }
-                });
-                observer.observe(document.body, { childList: true });
-            }
-        })();
     </script>
 </body>
 
